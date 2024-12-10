@@ -1,0 +1,797 @@
+/*HOME.HTML/CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background: ivory;
+    color: #A67A4D;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #444;
+    padding: 0.5rem 0;
+}
+
+nav .nav__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+
+nav .logo a {
+    color: cyan;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+nav .nav__bar {
+    font-weight: bold;    
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+
+main {
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 100vh;
+    background-image: url('wall.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: none;
+  
+}
+}
+
+main .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background: cream;
+}
+
+.section__contaner {
+    text-align: left;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    
+}
+
+.container h3 {
+    line-height: 1;
+    babackground: ivory;
+}
+
+.container h1 {
+   
+    line-height: 1;
+    background: ivory;
+  
+}
+
+.container {
+    background-color: ivory;
+}
+
+.hobbies {
+    background-color: ivory;
+}
+
+.HOBBY {
+    background-color: ivory;
+}
+
+.content {
+    flex: 1 1 45%;
+}
+
+.image {
+    display: inline-block;
+    position: relative;
+    border-radius: 15px; 
+    overflow: hidden;
+}
+
+.image img {
+    width: 30%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+    border-radius: inherit;
+    cursor: pointer; 
+}
+
+
+.image:active img {
+    box-shadow: 0 10px 20px rgba(0, 0, 255, 0.5); 
+    transform: scale(0.95); 
+    background-color: rgba(0, 128, 255, 0.1); 
+}
+
+
+.image:focus img {
+    outline: none; 
+    transform: translate(5px, 5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+.image img {
+    will-change: transform, box-shadow; 
+}
+
+
+.image:hover img {
+    box-shadow: 0 15px 30px rgba(0, 128, 255, 0.4); 
+    transform: scale(1.05); 
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: cyan;
+    margin-bottom: 1rem;  
+}
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: white;
+}
+
+.Ako {
+    color: white;
+    font-size: 1.5rem;
+}
+.gege{ 
+    color: cyan;
+    font-size: 2rem;
+}
+.hehe {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0; 
+    color: orange;   
+}
+.description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: ivory;
+}
+
+
+
+
+
+ footer {
+    background: #333;
+    color: cream;
+    text-align: center;
+    padding: 0.6rem 0;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    background-color: grey;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/*FLEX.HTML/CSS*/
+.pictures {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 20px;
+    background: ivory;
+    scroll-snap-type: x mandatory;
+}
+
+.pictures::-webkit-scrollbar {
+    display: none; 
+}
+
+.HUHU {
+    flex: 0 0 auto;
+    width: 500px; 
+    height: 500px; 
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-snap-align: center;
+}
+
+.HUHU img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 15px;
+}
+
+.HUHU:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+@media (max-width: 768px) {
+    .HUHU {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+
+.foot h20 {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 0rem 0;
+    margin-top: 0rem;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    background-color: grey;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*HTML - SKILLS/HOBBIES*/
+
+
+
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+
+}
+
+.HOBBY, .SKILL {
+    text-align: center;
+    font-size: px;
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: cyan;
+    color: cyan;
+
+}
+
+.HOBBY {
+    color: #A67A4D;
+    
+}
+
+.SKILL {
+    color: #A67A4D;
+}
+.skills.and.hobbies {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0 20px;
+    padding: 10px;
+    text-align: center;
+    color: cyan;
+}
+
+
+.skills.and.hobbies ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: cyan;
+    
+}
+
+.skills.and.hobbies li {
+    margin: 8px 0;
+    font-size: 15px;
+    color: grey;
+    
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+video-container {
+    color: #A67A4D;
+}
+
+.container h1 {
+    color: #A67A4D;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+/*FACEBOOK AND INSTA DESIGN*/
+.action__btns {
+  display: flex;
+  gap: 10px;
+}
+
+.facebook-btn,
+.instagram-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* Facebook Logo */
+.facebook-btn {
+  background: #3b5998;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.325v21.351c0 .733.592 1.324 1.325 1.324h11.491v-9.294h-3.125v-3.622h3.125v-2.672c0-3.1 1.893-4.788 4.657-4.788 1.325 0 2.464.099 2.795.143v3.244h-1.918c-1.505 0-1.797.716-1.797 1.763v2.31h3.587l-.467 3.622h-3.12v9.293h6.116c.733 0 1.325-.591 1.325-1.324v-21.35c0-.733-.592-1.325-1.325-1.325z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* Instagram Logo */
+.instagram-btn {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M7.75 2C4.511 2 2 4.51 2 7.75v8.5C2 19.489 4.511 22 7.75 22h8.5c3.239 0 5.75-2.511 5.75-5.75v-8.5C22 4.511 19.489 2 16.25 2h-8.5zm0 2h8.5c2.1 0 3.75 1.65 3.75 3.75v8.5c0 2.1-1.65 3.75-3.75 3.75h-8.5C5.65 20 4 18.35 4 16.25v-8.5C4 5.65 5.65 4 7.75 4zm9.75 1a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zM12 7c-2.755 0-5 2.245-5 5s2.245 5 5 5 5-2.245 5-5-2.245-5-5-5zm0 2a3 3 0 110 6 3 3 0 010-6z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Title Styling */
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: orange;
+  background: none;
+  video-height: 
+}
+
+/* Video Styling */
+.video-container video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: black;
+  color: black;
+  
+}
+
+.container {
+  text-align: center; 
+  max-width: 600px;
+  margin: 0 auto; 
+  margin: 30px auto;
+  
+  
+}
+
+.video-container {
+  width: 100%;
+  max-width: 100%; 
+  aspect-ratio: 16 / 9; 
+  overflow: hidden; 
+
+  
+  
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 8px; 
+  
+}
+
+
+
+
+
+
+
+/*LESSONS CSS*/
+
+
+/* Articles */
+article {
+    background: ivory;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+header h1 {
+    color: cyan;
+    
+}
+header p {
+    font-weight: bold;
+    color: white;
+    
+    
+}
+
+h1 p {
+    color: white;
+    font-size: 1.8em;
+}
+
+article h2 {
+    margin-top: 0;
+    color: #A67A4D;
+    font-size: 1.8em;
+    
+}
+
+article p {
+    margin: 10px 0;
+    color: grey;
+    
+    
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+article h10 {
+    color: black;
+}
+
+footer h12 {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 0.6rem 0;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    background-color: grey;
+}
+
+
+
+
+
+/* Image Hover Effects*/
+```
+article img {
+  transition: transform 0.5s, box-shadow 0.5s;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+article img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+```
+
+
+For touch devices, add:
+
+```
+article img:active {
+  transform: scale(0.95);
+}
+```
+
+
+For a fade-in effect:
+
+```
+article img {
+  opacity: 0.5;
+  transition: opacity 1s, transform 4s;
+}
+
+article img:hover {
+  opacity: 1;
+}
+```
+
+
+
+
+
+
+
+/* Links */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    article h2 {
+        font-size: 1.5em;
+    }
+
+    body {
+        font-size: 0.95em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMATION */
+h1 {
+    background: #444;
+    margin-top: 0;
+    color: cyan;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
+    line-height:
+    
+}
+
+.video-container {
+    background: cream;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    line-height: ;
+    
+    
+}
+
+animation {
+    max-width: 100%;
+    border-radius: 30px;
+    margin: 50px 0;
+    
+    
+    
+    
+    
+
+    
+     
+}
+
+.video-container p {
+    margin-top: 0px;
+    font-weight: bold;
+    color: brown;
+    
+    
+    
+}
+
+
+
+/*BACKGROUND*/
+
+main {
+    background-image: url('bb.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    image-rendering: crisp-edges; 
+    image-rendering: -webkit-optimize-contrast; 
+    filter: none; 
+    background-attachment: fixed; 
+}
+
+
+
+/*ANIMATION 2*/
+/* Minimalist Header */
+
+
+/* Main background */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    line-height: 1.5;
+    
+    
+    
+}
+/* Flipaclip container */
+.Flipaclip {
+    display: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    width: 85%;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 0.5;
+    
+    
+}
+
+
+.animation {
+    
+    text-align: center;
+    background: ivory; 
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    font-weight: bold
+    
+    
+}
+
+/* Video styling */
+.animation video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    outline: none;
+    
+    
+}
+
+/* Animation title */
+.animation p {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #A67A4D;
+    
+    
+}
+
+.foot p {
+    line-height: 
+}
+
+
+
+
+
+
+
+
+
+
+
+
